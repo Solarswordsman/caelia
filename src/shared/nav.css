@@ -1,0 +1,59 @@
+/* Shared top nav — a consistent dark "infernal" frame across all pages. */
+
+.site-nav {
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	flex-wrap: wrap;
+	padding: 0.7rem 1.25rem;
+	background: var(--bg);
+	border-bottom: 1px solid var(--border2);
+	position: sticky;
+	top: 0;
+	z-index: 50;
+}
+
+.site-nav__brand {
+	font-family: var(--font-display);
+	color: var(--gold);
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	font-size: 0.95rem;
+}
+
+.site-nav__brand:hover {
+	color: #e8d4a0;
+}
+
+.site-nav__tabs {
+	display: flex;
+	gap: 0.4rem;
+	list-style: none;
+	margin-left: auto;
+}
+
+.site-nav__tab {
+	font-family: var(--font-display);
+	color: var(--text-dim);
+	text-decoration: none;
+	font-size: 0.62rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	padding: 5px 14px;
+	border: 0.5px solid var(--border);
+	border-radius: 2px;
+	transition: all 0.15s ease;
+}
+
+.site-nav__tab:hover {
+	color: var(--text);
+	border-color: var(--border2);
+}
+
+.site-nav__tab.is-active {
+	color: var(--gold);
+	border-color: var(--gold-dim);
+	background: var(--pill-active);
+}

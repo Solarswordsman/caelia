@@ -1,0 +1,48 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   Shared design tokens — the coherent base every Caelia app builds on.
+   Consolidates the Diabolic "infernal" palette and the Journal "parchment"
+   palette into one variable set, plus all shared fonts and a global reset.
+   Pages keep their own character for now (dark vs. parchment body); a future
+   redesign can lean harder on these tokens.
+   ───────────────────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Kalam:wght@300;400&display=swap');
+
+:root {
+	/* Infernal palette (from the Diabolic reference) */
+	--bg: #0e0b08;
+	--bg2: #151008;
+	--bg3: #1c1510;
+	--border: rgba(180, 130, 60, 0.18);
+	--border2: rgba(180, 130, 60, 0.35);
+	--gold: #c9a84c;
+	--gold-dim: #8a6e30;
+	--red: #8b2020;
+	--red-bright: #c23a3a;
+	--text: #d4c4a0;
+	--text-dim: #8a7a5a;
+	--text-faint: #c9c9c9;
+	--pill-bg: #1c1510;
+	--pill-active: #2a1e0e;
+
+	/* Parchment palette (from the Journal) */
+	--parchment: #f8f4e8;
+	--parchment-line: rgba(148, 136, 108, 0.28);
+	--ink: #180c04;
+	--ink-soft: #1e1208;
+	--ink-label: #6e5030;
+	--journal-bg: #242018;
+	--dbl-red: #7a1515;
+
+	/* Fonts */
+	--font-display: 'Cinzel', serif;
+	--font-serif: 'Crimson Text', Georgia, serif;
+	--font-serif-pro: 'Crimson Pro', Georgia, serif;
+	--font-hand: 'Kalam', cursive;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}

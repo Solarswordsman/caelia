@@ -1,0 +1,25 @@
+# dependencies
+node_modules
+
+# build output
+dist
+dist-ssr
+coverage
+
+# local / personal
+CLAUDE.local.md
+*.local
+.vite
+
+# editor / OS
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# logs & env
+*.log
+npm-debug.log*
+.env
+.env.*
+!.env.example

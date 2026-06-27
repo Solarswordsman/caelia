@@ -1,0 +1,221 @@
+/* Diabolic reference — dark "infernal" theme. Palette/reset live in tokens.css. */
+
+body {
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--font-serif);
+	font-size: 20px;
+	min-height: 100vh;
+	line-height: 1.5;
+}
+
+.page {
+	max-width: 780px;
+	margin: 0 auto;
+	padding: 2.5rem 1.5rem 4rem;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 2.5rem;
+	padding-bottom: 1.5rem;
+	border-bottom: 0.5px solid var(--border2);
+	position: relative;
+}
+
+header::after {
+	content: '';
+	display: block;
+	width: 60px;
+	height: 1px;
+	background: var(--gold);
+	margin: 1rem auto 0;
+	opacity: 0.4;
+}
+
+h1 {
+	font-family: var(--font-display);
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--gold);
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	margin-bottom: 0.3rem;
+}
+
+.subtitle {
+	font-size: 0.95rem;
+	color: var(--text-dim);
+	font-style: italic;
+	letter-spacing: 0.03em;
+}
+
+.filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-bottom: 2rem;
+}
+
+.pill {
+	cursor: pointer;
+	padding: 5px 14px;
+	border-radius: 2px;
+	border: 0.5px solid var(--border);
+	font-family: var(--font-display);
+	font-size: 0.65rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--text-dim);
+	background: var(--pill-bg);
+	transition: all 0.15s ease;
+	outline: none;
+}
+
+.pill:hover {
+	border-color: var(--border2);
+	color: var(--text);
+}
+
+.pill.active {
+	background: var(--pill-active);
+	border-color: var(--gold-dim);
+	color: var(--gold);
+}
+
+.section {
+	margin-bottom: 2rem;
+	animation: fadein 0.2s ease;
+}
+
+@keyframes fadein {
+	from { opacity: 0; transform: translateY(4px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+.section-head {
+	display: flex;
+	align-items: baseline;
+	gap: 12px;
+	margin-bottom: 8px;
+	padding-bottom: 6px;
+	border-bottom: 0.5px solid var(--border2);
+}
+
+.section-title {
+	font-family: var(--font-display);
+	font-size: 0.7rem;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--gold);
+}
+
+.section-sub {
+	font-size: 0.85rem;
+	color: var(--text-faint);
+	font-style: italic;
+}
+
+.col-head {
+	display: grid;
+	grid-template-columns: 46% 54%;
+	padding: 0 0 3px;
+	margin-bottom: 1px;
+}
+
+.ch {
+	font-family: var(--font-display);
+	font-size: 0.58rem;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--text-faint);
+	padding: 0 6px;
+}
+
+.entry {
+	display: grid;
+	grid-template-columns: 46% 54%;
+	border-bottom: 0.5px solid var(--border);
+	transition: background 0.1s;
+}
+
+.entry:last-child { border-bottom: none; }
+
+.entry:hover {
+	background: rgba(180, 130, 60, 0.04);
+}
+
+.meaning {
+	padding: 6px 10px 6px 6px;
+	font-size: 0.92rem;
+	color: var(--text);
+	display: flex;
+	align-items: center;
+	line-height: 1.35;
+	border-right: 0.5px solid var(--border);
+}
+
+.meaning-inner { display: flex; flex-direction: column; gap: 1px; }
+
+.meaning-quote { color: var(--text); }
+
+.meaning-usage {
+	font-size: 0.78rem;
+	color: var(--text-faint);
+	font-style: italic;
+	margin-top: 2px;
+}
+
+.phrase-block {
+	padding: 6px 6px 6px 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.phrase-main {
+	font-family: var(--font-serif);
+	font-weight: 600;
+	font-size: 1rem;
+	color: #e8d4a0;
+	letter-spacing: 0.02em;
+}
+
+.phrase-alts {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.alt-item {
+	font-family: var(--font-serif);
+	font-weight: 600;
+	font-size: 1rem;
+	color: #b89a5a;
+	letter-spacing: 0.02em;
+}
+
+.alt-sep {
+	color: var(--gold-dim);
+	font-size: 0.55rem;
+	padding: 0 7px;
+	user-select: none;
+	vertical-align: middle;
+}
+
+.ornament {
+	text-align: center;
+	color: var(--border2);
+	font-size: 1.1rem;
+	margin: 1.5rem 0 0;
+	letter-spacing: 0.5em;
+}
+
+.status-msg {
+	text-align: center;
+	color: var(--text-dim);
+	font-style: italic;
+	padding: 3rem 0;
+}

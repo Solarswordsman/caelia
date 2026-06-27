@@ -1,0 +1,16 @@
+# Netlify build & deploy settings for Caelia (a static Vite multi-page site).
+# Docs: https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+	# Gate the deploy on lint + tests (the lexicon-integrity test catches bad JSON
+	# or phrases used in entries that are missing from the lexicon), then build.
+	# For faster deploys, change this to just "npm run build".
+	command = "npm run lint && npm test && npm run build"
+	publish = "dist"
+
+[build.environment]
+	# Vite 8 needs Node >= 20.19 / 22.12. Pin for reproducible CI builds.
+	NODE_VERSION = "22"
+
+# Multi-page static site, no client-side router, so no SPA fallback redirect is
+# needed. Pages resolve as /, /journal/, /diabolic/.
