@@ -6,6 +6,12 @@ import { renderText } from "./parse.js";
 
 mountNav();
 
+// Dev-only: a handwriting-font explorer for the journal. The dynamic import is
+// behind import.meta.env.DEV, so it's dropped from production builds entirely.
+if (import.meta.env.DEV) {
+	import("../dev/font-picker.js").then(m => m.mountFontPicker());
+}
+
 function render(entries) {
 	const el = document.getElementById("entries");
 	if (!entries.length) {
