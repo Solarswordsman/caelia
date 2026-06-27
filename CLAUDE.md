@@ -70,8 +70,11 @@ Give each new phrase a canonical `diabolic` form and 1–2 `alts` (more corrupte
 
 ## Workflow: adding a journal entry
 
+Run the **`/journal-entry`** skill to drive this end-to-end (`.claude/skills/journal-entry/`).
+
 The user writes an entry in chat and marks intended Diabolic phrases with **double brackets**:
-`[[english phrase or intent]]`. They should include a Golarion date — **ask if missing**.
+`[[english phrase or intent]]`. They should include a Golarion date — **ask if missing**. They may
+also give an optional short `title`.
 
 For each `[[...]]` marker:
 1. Search `diabolic-lexicon.json` for a match or close-enough equivalent. **Matching can be fuzzy
@@ -96,9 +99,10 @@ emphasis; honest emotional processing but not self-aware about it; abrupt topic 
 ### Entry format (`entries.json`)
 
 ```json
-{ "date": "6th of Rova, 4725 AR", "text": "Entry text. {d:Rogus et cinera.:Pyre and ash} ..." }
+{ "date": "6th of Rova, 4725 AR", "title": "An optional short title", "text": "Entry text. {d:Rogus et cinera.:Pyre and ash} ..." }
 ```
 
+`title` is optional — omit it and the journal shows the date as the heading instead.
 Newlines within `text` use `\n`.
 
 ## Conventions & commands

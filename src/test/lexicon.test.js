@@ -67,4 +67,12 @@ describe("journal entries", () => {
 		}
 		expect(missing).toEqual([]);
 	});
+
+	it("each entry has string date/text, and a string title when present", () => {
+		for (const e of entries) {
+			expect(typeof e.date).toBe("string");
+			expect(typeof e.text).toBe("string");
+			if ("title" in e) expect(typeof e.title).toBe("string");
+		}
+	});
 });

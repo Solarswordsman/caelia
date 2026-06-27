@@ -15,6 +15,7 @@ function render(entries) {
 	el.innerHTML = entries.map(e =>
 		`<div class="entry">
 			<div class="entry-date">${esc(e.date)}</div>
+			${e.title ? `<h2 class="entry-title">${esc(e.title)}</h2>` : ""}
 			<div class="entry-text">${renderText(e.text)}</div>
 		</div>`
 	).join("");
