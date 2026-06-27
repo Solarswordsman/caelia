@@ -1,0 +1,159 @@
+[
+  {
+    "diabolic": "Us'maldra!",
+    "english": "Damn it!",
+    "register": "guttural",
+    "notes": "Sharp reflex expletive. Most instinctive single-word curse."
+  },
+  {
+    "diabolic": "Itor cael",
+    "english": "For the love of—",
+    "register": "guttural",
+    "notes": "Trails off; she rarely finishes it. Frustration, not rage."
+  },
+  {
+    "diabolic": "Nox erebi!",
+    "english": "Son of a—!",
+    "register": "guttural",
+    "notes": "Shock/pain reaction more than anger. Also trails off."
+  },
+  {
+    "diabolic": "Sal'vitam te",
+    "english": "Go to hell",
+    "register": "guttural",
+    "notes": "Direct dismissal. Lit. something like 'save your life elsewhere.'"
+  },
+  {
+    "diabolic": "Malum ven'tis",
+    "english": "Oh, this is bad / bad winds coming",
+    "register": "guttural",
+    "notes": "Dread, not explosive. Said quietly when things are going sideways."
+  },
+  {
+    "diabolic": "Inferis da mihi patientiam",
+    "english": "Hell give me patience",
+    "register": "liturgical",
+    "notes": "Directly parallel to 'God give me strength.' The nuns' version."
+  },
+  {
+    "diabolic": "Rogus et cinera.",
+    "english": "Pyre and ash / we're done for",
+    "register": "liturgical",
+    "notes": "Paired noun curse. The Asmodean equivalent of 'fire and brimstone.' Used when something is irreversibly bad."
+  },
+  {
+    "diabolic": "Nomen eius non invoco",
+    "english": "I'm not calling on His name",
+    "register": "liturgical",
+    "notes": "Said carefully when she nearly invokes Asmodeus by reflex. Old nun-taught caution."
+  },
+  {
+    "diabolic": "Serva me, lex aeterna",
+    "english": "Save me, eternal law",
+    "register": "liturgical",
+    "notes": "Genuine prayer-reflex. Not ironic. The closest she gets to actually praying."
+  },
+  {
+    "diabolic": "Apage",
+    "english": "Away / Begone",
+    "register": "liturgical",
+    "notes": "Single word. Cold and formal. Used to dismiss something or someone — or a thought."
+  },
+  {
+    "diabolic": "Mer'cinis!",
+    "english": "Shit!",
+    "register": "street",
+    "notes": "Most instinctive single-word expletive for pure shock. Contracted."
+  },
+  {
+    "diabolic": "Vah! Stultus sum",
+    "english": "Ugh! I'm an idiot",
+    "register": "street",
+    "notes": "Self-directed. Said when she makes a mistake she should have seen coming."
+  },
+  {
+    "diabolic": "Calcat'nos diabolus",
+    "english": "We're cursed / the devil's got our number",
+    "register": "street",
+    "notes": "Fatalistic. Said when things keep going wrong in a pattern."
+  },
+  {
+    "diabolic": "In ignem omnia",
+    "english": "Burn it all / screw everything",
+    "register": "street",
+    "notes": "Total frustration with a situation. Lit. 'into the fire, all of it.'"
+  },
+  {
+    "diabolic": "Tace tace tace",
+    "english": "Shut up shut up shut up",
+    "register": "street",
+    "notes": "Repeated for emphasis. Can be directed outward or at her own thoughts."
+  },
+  {
+    "diabolic": "Vale, amice",
+    "english": "Goodbye, friend",
+    "register": "cold",
+    "notes": "Formally polite on the surface. Said when things turn deadly serious — a warning dressed as a farewell."
+  },
+  {
+    "diabolic": "Recte dicis",
+    "english": "You're right",
+    "register": "cold",
+    "notes": "Dangerous agreement. When she says this coldly, it means she's accepted something she didn't want to."
+  },
+  {
+    "diabolic": "Satis est.",
+    "english": "That's enough / Enough",
+    "register": "cold",
+    "notes": "Full stop. Used to end arguments, threats, or her own spiraling thoughts."
+  },
+  {
+    "diabolic": "Fac quod vis",
+    "english": "Do what you want / Have it your way",
+    "register": "cold",
+    "notes": "Dismissive or threatening depending on context. She's done arguing."
+  },
+  {
+    "diabolic": "Iam videt.",
+    "english": "He already sees",
+    "register": "cold",
+    "notes": "Invokes Asmodeus's omniscience. Said when something can't be taken back — a reminder, maybe a threat."
+  },
+  {
+    "diabolic": "Sang'et damnis!",
+    "english": "Blood and damnation",
+    "register": "liturgical",
+    "notes": "COINED. Liturgical structure, strong paired curse. From sanguis et damnis. Said mid-frustration with a heavy subject. First appeared: Rova 6, 4725 AR."
+  },
+  {
+    "diabolic": "Cal'acutus.",
+    "english": "Smartass",
+    "register": "street",
+    "notes": "COINED. Contracted from callidus acutus, 'sharp clever one.' Used as a directed insult. First target: Leofric. First appeared: Rova 6, 4725 AR."
+  },
+  {
+    "diabolic": "In ignem eum.",
+    "english": "Burn him",
+    "register": "street",
+    "notes": "COINED. Adapted from In ignem omnia — same structure, targeted (eum = him). First appeared: Rova 6, 4725 AR."
+  },
+  {
+    "diabolic": "Anima miser'da...",
+    "english": "Poor unfortunate soul...",
+    "register": "liturgical",
+    "notes": "COINED. Contracted from anima miseranda, 'soul to be pitied.' The nuns said prayers like this over the fallen. Caelia uses it with genuine sadness. First appeared: Rova 7, 4725 AR."
+  },
+  {
+    "diabolic": "pactum",
+    "english": "Contract",
+    "register": "liturgical",
+    "notes": "Not coined — a foundational word. Asmodean doctrine runs on contracts; she likely learned this before she learned the Common word for it. Slips out naturally.",
+    "notes2": "First appeared in writing: Rova 7, 4725 AR."
+  },
+  {
+    "diabolic": "Quid'inferi?!",
+    "english": "What the fuck?!",
+    "register": "guttural",
+    "notes": "COINED. Contracted from quid in inferis, 'what in hell?!' Bewildered expletive, not angry — pure shock. First appeared: Rova 7, 4725 AR (without further elaboration)."
+  }
+]
