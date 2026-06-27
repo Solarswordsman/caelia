@@ -1,12 +1,12 @@
 /* ─────────────────────────────────────────────────────────────────────────
    Shared design tokens — the coherent base every Caelia app builds on.
-   Consolidates the Diabolic "infernal" palette and the Journal "parchment"
-   palette into one variable set, plus all shared fonts and a global reset.
-   Pages keep their own character for now (dark vs. parchment body); a future
-   redesign can lean harder on these tokens.
+   One warm "infernal" palette (near-black grounds, gold + crimson accents,
+   parchment-toned text), all shared fonts, and a global reset. Every page —
+   hub, diabolic, and journal — is dark; the journal layers a handwritten font
+   (Kalam) on top for its in-character feel.
    ───────────────────────────────────────────────────────────────────────── */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Kalam:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Cinzel:wght@400;500;600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Reenie+Beanie&display=swap');
 
 :root {
 	/* Infernal palette (from the Diabolic reference) */
@@ -25,24 +25,23 @@
 	--pill-bg: #1c1510;
 	--pill-active: #2a1e0e;
 
-	/* Parchment palette (from the Journal) */
-	--parchment: #f8f4e8;
-	--parchment-line: rgba(148, 136, 108, 0.28);
-	--ink: #180c04;
-	--ink-soft: #1e1208;
-	--ink-label: #6e5030;
-	--journal-bg: #242018;
-	--dbl-red: #7a1515;
-
 	/* Fonts */
 	--font-display: 'Cinzel', serif;
 	--font-serif: 'Crimson Text', Georgia, serif;
 	--font-serif-pro: 'Crimson Pro', Georgia, serif;
-	--font-hand: 'Kalam', cursive;
+	--font-hand: 'Reenie Beanie', cursive;          /* journal body ink */
+	--font-hand-display: 'Caveat', cursive;          /* her name in the header */
 }
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+/* Global scale knob — most sizing is in rem, so this bumps the whole site
+   (nav, hub, journal, diabolic) proportionally. ~19.2px; respects the user's
+   own browser font-size preference. */
+html {
+	font-size: 120%;
 }
