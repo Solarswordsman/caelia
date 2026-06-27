@@ -636,5 +636,49 @@
 		"notes": "Dismissive or threatening depending on context.",
 		"coined": false,
 		"firstAppeared": null
+	},
+	{
+		"diabolic": "Bestae!",
+		"english": "Monsters!",
+		"alts": ["Best'ae!", "Bestai!"],
+		"register": "guttural",
+		"vibe": "Expletives & frustration",
+		"usage": "spat out with contempt; quoting the mindset she's raging against",
+		"notes": "From bestiae (beasts). She uses it to name the dehumanizing word others throw at creatures she doesn't see that way.",
+		"coined": true,
+		"firstAppeared": "28th of Rova, 4725 AR"
+	},
+	{
+		"diabolic": "Terr'eos.",
+		"english": "Frighten them.",
+		"alts": ["Terreos.", "Terr'es."],
+		"register": "street",
+		"vibe": "Combat taunts",
+		"usage": "trying to drive enemies off rather than fight",
+		"notes": "From terrere eos, 'to frighten them.' Used when intimidation is the goal, not killing.",
+		"coined": true,
+		"firstAppeared": "28th of Rova, 4725 AR"
+	},
+	{
+		"diabolic": "Sikarius.",
+		"english": "Murderer.",
+		"alts": ["Sik'arius.", "Sik'ar."],
+		"register": "cold",
+		"vibe": "Combat taunts",
+		"usage": "cold naming of what someone is; a verdict, not trash talk",
+		"notes": "From sicarius (hired killer; assassin in Roman law). Hardened c→k. She says it like a formal accusation.",
+		"coined": true,
+		"firstAppeared": "28th of Rova, 4725 AR"
+	},
+	{
+		"diabolic": "Spol'um.",
+		"english": "Trophy.",
+		"alts": ["Spolum.", "Spol'."],
+		"register": "cold",
+		"vibe": "Dread & dark omens",
+		"usage": "something taken from the fallen as a prize; said with revulsion",
+		"notes": "From spolium (spoils stripped from the enemy). The clipped form sounds like the word being spat.",
+		"coined": true,
+		"firstAppeared": "28th of Rova, 4725 AR"
 	}
 ]
