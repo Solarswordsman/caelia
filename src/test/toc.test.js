@@ -13,27 +13,32 @@ describe("buildTocModel", () => {
 	const model = buildTocModel(entries);
 
 	it("groups entries by month + year", () => {
-		expect(model.months.map(m => m.label)).toEqual(["Lamashan 4725", "Rova 4725"]);
+		expect(model.months.map(m => m.label)).toEqual(["Rova 4725", "Lamashan 4725"]);
 	});
 
-	it("orders month groups newest-first (by Golarion calendar)", () => {
-		expect(model.months[0].label).toBe("Lamashan 4725");
+	it("orders month groups oldest-first (by Golarion calendar)", () => {
+		expect(model.months[0].label).toBe("Rova 4725");
 	});
 
-	it("orders entries within a month newest-first, ties broken by later index", () => {
+	it("orders entries within a month oldest-first, ties by original index", () => {
 		const rova = model.months.find(m => m.label === "Rova 4725");
-		expect(rova.items.map(it => it.index)).toEqual([3, 2, 1, 0]);
+		expect(rova.items.map(it => it.index)).toEqual([0, 1, 2, 3]);
 	});
 
 	it("points mostRecentIndex at the single latest entry", () => {
 		expect(model.mostRecentIndex).toBe(4);
 	});
 
-	it("buckets unparseable dates under 'Other', sorted last", () => {
+	it("flags the latest month as current (default-expanded)", () => {
+		expect(model.currentMonthKey).toBe("Lamashan 4725");
+		expect(model.months.find(m => m.current).label).toBe("Lamashan 4725");
+	});
+
+	it("buckets unparseable dates under 'Other', sorted first (oldest)", () => {
 		const { months } = buildTocModel([
 			{ date: "1st of Rova, 4725 AR", text: "x" },
 			{ date: "someday", text: "y" },
 		]);
-		expect(months.at(-1).label).toBe("Other");
+		expect(months[0].label).toBe("Other");
 	});
 });

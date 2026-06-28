@@ -20,11 +20,18 @@ function parseDate(date) {
 	};
 }
 
+// Single comparable number for "how recent": month-of-era * 100 + day.
+function recencyRank(it) {
+	if (!it.p) return -1;
+	return (it.p.year * 12 + it.p.monthIdx) * 100 + it.p.dayNum;
+}
+
 /**
  * Build the table-of-contents model from journal entries (render order; the
  * array index is the scroll-anchor id). Pure — no DOM — so it can be tested.
- * Months come back newest-first, entries within a month newest-first, and
- * mostRecentIndex points at the single latest entry.
+ * Mirrors the page: months oldest-first, entries within a month oldest-first.
+ * The month containing the single latest entry is flagged `current` (expanded
+ * by default), and mostRecentIndex points at that latest entry.
  */
 export function buildTocModel(entries) {
 	const items = entries.map((e, index) => ({
@@ -48,17 +55,25 @@ export function buildTocModel(entries) {
 		groups.get(key).items.push(it);
 	}
 
-	const months = [...groups.values()].sort((a, b) => b.sort - a.sort);
+	const months = [...groups.values()].sort((a, b) => a.sort - b.sort);
 	for (const g of months) {
 		g.items.sort((a, b) =>
-			(b.p ? b.p.dayNum : 0) - (a.p ? a.p.dayNum : 0) || b.index - a.index);
+			(a.p ? a.p.dayNum : 0) - (b.p ? b.p.dayNum : 0) || a.index - b.index);
 	}
 
-	const mostRecentIndex = months.length && months[0].items.length
-		? months[0].items[0].index
-		: null;
+	let recent = null;
+	for (const it of items) {
+		if (!recent
+			|| recencyRank(it) > recencyRank(recent)
+			|| (recencyRank(it) === recencyRank(recent) && it.index > recent.index)) {
+			recent = it;
+		}
+	}
+	const mostRecentIndex = recent ? recent.index : null;
+	const currentMonthKey = recent ? (recent.p ? `${recent.p.month} ${recent.p.year}` : "Other") : null;
+	for (const g of months) g.current = g.key === currentMonthKey;
 
-	return { months, mostRecentIndex };
+	return { months, mostRecentIndex, currentMonthKey };
 }
 
 function entryLabel(it) {
@@ -71,7 +86,7 @@ function scrollToAnchor(id) {
 	if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-/** Render the floating contents rail and wire its interactions. */
+/** Render the floating contents rail + its mobile toggle chip, and wire them. */
 export function mountToc(entries) {
 	const { months, mostRecentIndex } = buildTocModel(entries);
 	if (!months.length) return;
@@ -85,9 +100,9 @@ export function mountToc(entries) {
 			? `<button class="toc__recent" data-target="entry-${mostRecentIndex}">Most recent ↡</button>`
 			: ""}
 		<ul class="toc__months">
-			${months.map((g, gi) => `
-				<li class="toc__month${gi === 0 ? " is-open" : ""}">
-					<button class="toc__month-head" aria-expanded="${gi === 0}">
+			${months.map(g => `
+				<li class="toc__month${g.current ? " is-open" : ""}">
+					<button class="toc__month-head" aria-expanded="${Boolean(g.current)}">
 						<span class="toc__caret" aria-hidden="true">▸</span><span>${esc(g.label)}</span>
 					</button>
 					<ul class="toc__entries">
@@ -100,6 +115,20 @@ export function mountToc(entries) {
 		</ul>
 	`;
 
+	const toggle = document.createElement("button");
+	toggle.className = "toc-toggle";
+	toggle.setAttribute("aria-label", "Toggle journal contents");
+	toggle.setAttribute("aria-expanded", "false");
+	toggle.innerHTML = `<span aria-hidden="true">☰</span> Contents`;
+
+	const isOverlay = () => window.matchMedia("(max-width: 1150px)").matches;
+	const setVisible = open => {
+		nav.classList.toggle("is-visible", open);
+		toggle.setAttribute("aria-expanded", String(open));
+	};
+
+	toggle.addEventListener("click", () => setVisible(!nav.classList.contains("is-visible")));
+
 	nav.addEventListener("click", ev => {
 		const head = ev.target.closest(".toc__month-head");
 		if (head) {
@@ -109,8 +138,11 @@ export function mountToc(entries) {
 			return;
 		}
 		const link = ev.target.closest("[data-target]");
-		if (link) scrollToAnchor(link.dataset.target);
+		if (link) {
+			scrollToAnchor(link.dataset.target);
+			if (isOverlay()) setVisible(false);
+		}
 	});
 
-	document.body.appendChild(nav);
+	document.body.append(nav, toggle);
 }
