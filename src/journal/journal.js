@@ -3,6 +3,7 @@ import "./journal.css";
 import { mountNav } from "../shared/nav.js";
 import { esc } from "../shared/dom.js";
 import { renderText } from "./parse.js";
+import { mountToc } from "./toc.js";
 
 mountNav();
 
@@ -18,8 +19,8 @@ function render(entries) {
 		el.innerHTML = '<div class="status-msg">(The pages are empty.)</div>';
 		return;
 	}
-	el.innerHTML = entries.map(e =>
-		`<div class="entry">
+	el.innerHTML = entries.map((e, i) =>
+		`<div class="entry" id="entry-${i}">
 			<div class="entry-date">${esc(e.date)}</div>
 			${e.title ? `<h2 class="entry-title">${esc(e.title)}</h2>` : ""}
 			<div class="entry-text">${renderText(e.text)}</div>
@@ -32,7 +33,10 @@ fetch("/data/entries.json")
 		if (!r.ok) throw new Error(r.statusText);
 		return r.json();
 	})
-	.then(render)
+	.then(entries => {
+		render(entries);
+		mountToc(entries);
+	})
 	.catch(() => {
 		document.getElementById("entries").innerHTML =
 			'<div class="status-msg">(Could not load entries.)</div>';
