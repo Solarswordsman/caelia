@@ -680,5 +680,16 @@
 		"notes": "From spolium (spoils stripped from the enemy). The clipped form sounds like the word being spat.",
 		"coined": true,
 		"firstAppeared": "28th of Rova, 4725 AR"
+	},
+	{
+		"diabolic": "Ignavus.",
+		"english": "Cowardly.",
+		"alts": ["Ign'avus.", "Ignav'us!"],
+		"register": "street",
+		"vibe": "Trash talk & mid-fight",
+		"usage": "spat at something that won't fight up close",
+		"notes": "From ignavus (cowardly, sluggish). First aimed at an Erastil-touched statue that kept its distance instead of closing to melee.",
+		"coined": true,
+		"firstAppeared": "30th of Rova, 4725 AR"
 	}
 ]
