@@ -691,5 +691,38 @@
 		"notes": "From ignavus (cowardly, sluggish). First aimed at an Erastil-touched statue that kept its distance instead of closing to melee.",
 		"coined": true,
 		"firstAppeared": "30th of Rova, 4725 AR"
+	},
+	{
+		"diabolic": "Nimis'omnia.",
+		"english": "Too much, all of it.",
+		"alts": ["Nim'somnia.", "Nimsomnia."],
+		"register": "guttural",
+		"vibe": "Awe & fearful wonder",
+		"usage": "overwhelmed, too much at once",
+		"notes": "Worn-out, run-together mutter from 'nimis omnia' (too much, everything). Slurred under emotional overload rather than fear — the awe of too much happening at once.",
+		"coined": true,
+		"firstAppeared": "25th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Emptus.",
+		"english": "A bought man.",
+		"alts": ["Em'tus.", "Emptis."],
+		"register": "cold",
+		"vibe": "Casual filler",
+		"usage": "someone on the payroll; a paid-off fixer",
+		"notes": "From 'emptus' (bought). Flat, matter-of-fact Chelaxian usage — no judgement in it, a bought man is simply a fact of doing business.",
+		"coined": true,
+		"firstAppeared": "25th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Infer'de",
+		"english": "Fucking / hellishly",
+		"alts": ["Inferde", "Inf'de"],
+		"register": "guttural",
+		"vibe": "Expletives & frustration",
+		"usage": "intensifier dropped mid-sentence ('so Infer'de cold')",
+		"notes": "Clipped from 'inferis de' (of the hells). Used as an adjective-intensifier rather than a standalone outburst; slots into Common sentences when she's grumbling.",
+		"coined": true,
+		"firstAppeared": "25th of Kuthona, 4725 AR"
 	}
 ]

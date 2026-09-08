@@ -35,6 +35,11 @@ coining, and notes on Caelia's voice — **read it and follow it**. Never start 
      `alts`, set `coined: true` and `firstAppeared: <this entry's date>`, and append it to the
      lexicon.
    - Replace the `[[...]]` in the text with `{d:DiabolicText:English meaning}`.
+   - A marker may carry **parenthesised instructions to you** rather than a clean English intent,
+     e.g. `[[(not sure of a word here — something meaning "a paid-off fixer", pick one and lmk)]]`.
+     Treat the parenthetical as guidance, choose a suitable English meaning yourself, and call out
+     your choice in the report so the user can adjust it. Never let the parenthetical leak into the
+     rendered `{d:...}` text.
 
 5. **Write the entry** to `entries.json` as `{ "date", "title"?, "text" }`, inserted in the correct
    chronological position (oldest first — usually the end). Newlines in `text` use `\n`. Keep
