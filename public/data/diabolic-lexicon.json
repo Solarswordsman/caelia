@@ -724,5 +724,60 @@
 		"notes": "Clipped from 'inferis de' (of the hells). Used as an adjective-intensifier rather than a standalone outburst; slots into Common sentences when she's grumbling.",
 		"coined": true,
 		"firstAppeared": "25th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Mir'abilis",
+		"english": "Amazing / wonderful",
+		"alts": ["Mirabilis!", "Mir'bilis!"],
+		"register": "street",
+		"vibe": "Warmth & friendship",
+		"usage": "gushing about someone she's fond of",
+		"notes": "From 'mirabilis' (wonderful, worthy of wonder), middle syllable swallowed. Warm and a little breathless — the same root the nuns used for infernal marvels, turned on a kind woman instead.",
+		"coined": true,
+		"firstAppeared": "26th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Pat'endum",
+		"english": "Suffer / to be endured",
+		"alts": ["Patiendum.", "Pat'end."],
+		"register": "liturgical",
+		"vibe": "Dread & dark omens",
+		"usage": "suffering framed as something owed or required",
+		"notes": "From 'patiendum' (that which must be suffered). A convent word — the nuns taught pain as obligation, not accident. She reaches for it when someone else is being made to suffer 'for their own good'.",
+		"coined": true,
+		"firstAppeared": "26th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Maledik'tum",
+		"english": "Curse",
+		"alts": ["Maledictum.", "Mal'diktum."],
+		"register": "liturgical",
+		"vibe": "Dread & dark omens",
+		"usage": "a curse or doom laid on someone",
+		"notes": "From 'maledictum', with the soft c hardened to k and the ending clipped. Liturgical weight — a formal pronouncement rather than a casual hex.",
+		"coined": true,
+		"firstAppeared": "26th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Dii... dii ipsi.",
+		"english": "The gods... the gods themselves.",
+		"alts": ["Di'ipsi...", "Diipsi..."],
+		"register": "liturgical",
+		"vibe": "Awe & fearful wonder",
+		"usage": "when the divine turns out to be personally involved",
+		"notes": "From 'dii ipsi' (the gods themselves). Trails off and repeats — she starts the thought, can't finish it, starts again. Fearful rather than reverent.",
+		"coined": true,
+		"firstAppeared": "26th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Somn'ia",
+		"english": "Dreams",
+		"alts": ["Somnia.", "Som'nia."],
+		"register": "street",
+		"vibe": "Dread & dark omens",
+		"usage": "dreams, especially ones that feel sent",
+		"notes": "From 'somnia' (dreams), one syllable swallowed. In Caelia's mouth dreams are rarely neutral — the convent taught that things speak through them.",
+		"coined": true,
+		"firstAppeared": "26th of Kuthona, 4725 AR"
 	}
 ]

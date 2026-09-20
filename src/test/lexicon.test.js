@@ -59,7 +59,7 @@ describe("journal entries", () => {
 		// Match case- and punctuation-insensitively so phrases can be adjusted
 		// (capitalized, repunctuated) to fit the prose without falling out of sync.
 		const norm = (s) => s.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, "").replace(/\s+/g, " ").trim();
-		const known = new Set(lexicon.map(p => norm(p.diabolic)));
+		const known = new Set(lexicon.flatMap(p => [p.diabolic, ...p.alts].map(norm)));
 		const re = /\{d:([^:}]+):[^}]+\}/g;
 		const missing = [];
 		for (const e of entries) {
