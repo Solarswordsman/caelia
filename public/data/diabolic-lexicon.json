@@ -779,5 +779,49 @@
 		"notes": "From 'somnia' (dreams), one syllable swallowed. In Caelia's mouth dreams are rarely neutral — the convent taught that things speak through them.",
 		"coined": true,
 		"firstAppeared": "26th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Vik'tores",
+		"english": "Conquerors",
+		"alts": ["Viktores.", "Vik'tors."],
+		"register": "cold",
+		"vibe": "Dread & dark omens",
+		"usage": "an occupying power, said with contempt",
+		"notes": "From 'victores' (victors), the soft c hardened to k. In Cheliax the word is a boast; in Caelia's mouth it is flat and bitter — the ones who won and now own you.",
+		"coined": true,
+		"firstAppeared": "27th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Pod'ices",
+		"english": "Assholes",
+		"alts": ["Podices!", "Pod'ces!"],
+		"register": "guttural",
+		"vibe": "Trash talk & mid-fight",
+		"usage": "thieves, bullies, anyone she's just been robbed by",
+		"notes": "From 'podices' (arses), middle vowel swallowed. Plain crude insult with no liturgical weight at all — pure street.",
+		"coined": true,
+		"firstAppeared": "27th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Korrup'tum",
+		"english": "Corrupted",
+		"alts": ["Corruptum.", "Kor'ruptum."],
+		"register": "liturgical",
+		"vibe": "Dread & dark omens",
+		"usage": "something sacred or personal that has been defiled",
+		"notes": "From 'corruptum' (spoiled, defiled), c hardened to k. Convent word for a tainted rite or vessel. She uses it for the hourglass holding her twisted power — and can barely say it.",
+		"coined": true,
+		"firstAppeared": "27th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Od'hoc!",
+		"english": "I hate this!",
+		"alts": ["Odi hoc!", "Odhoc!"],
+		"register": "guttural",
+		"vibe": "Expletives & frustration",
+		"usage": "overwhelmed, hating a situation rather than a person",
+		"notes": "From 'odi hoc' (I hate this), run together under emotion. Not aimed at anyone — a helpless outburst at the whole state of things.",
+		"coined": true,
+		"firstAppeared": "27th of Kuthona, 4725 AR"
 	}
 ]
