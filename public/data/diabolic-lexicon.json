@@ -803,17 +803,6 @@
 		"firstAppeared": "27th of Kuthona, 4725 AR"
 	},
 	{
-		"diabolic": "Korrup'tum",
-		"english": "Corrupted",
-		"alts": ["Corruptum.", "Kor'ruptum."],
-		"register": "liturgical",
-		"vibe": "Dread & dark omens",
-		"usage": "something sacred or personal that has been defiled",
-		"notes": "From 'corruptum' (spoiled, defiled), c hardened to k. Convent word for a tainted rite or vessel. She uses it for the hourglass holding her twisted power — and can barely say it.",
-		"coined": true,
-		"firstAppeared": "27th of Kuthona, 4725 AR"
-	},
-	{
 		"diabolic": "Od'hoc!",
 		"english": "I hate this!",
 		"alts": ["Odi hoc!", "Odhoc!"],
@@ -823,5 +812,49 @@
 		"notes": "From 'odi hoc' (I hate this), run together under emotion. Not aimed at anyone — a helpless outburst at the whole state of things.",
 		"coined": true,
 		"firstAppeared": "27th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Spur'kum.",
+		"english": "Filthy. Defiled.",
+		"alts": ["Spurkum.", "Spur'k."],
+		"register": "guttural",
+		"vibe": "Dread & dark omens",
+		"usage": "something ritually or bodily unclean — defiled, not merely broken",
+		"notes": "From 'spurcus' (filthy, unclean in the ritual sense), c hardened to k. Spat rather than spoken. Her word for the hourglass holding her twisted power — 'corrupted' in Common wasn't ugly enough.",
+		"coined": true,
+		"firstAppeared": "27th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Nef'as.",
+		"english": "Unspeakable. Sacrilege.",
+		"alts": ["Nefas.", "Nef'."],
+		"register": "cold",
+		"vibe": "Dread & dark omens",
+		"usage": "a wrong against divine law itself; the judgement after the revulsion",
+		"notes": "From 'nefas' (that which is forbidden by the gods). Short and final. The nuns' word for the very worst sins — she rarely uses it, and never lightly.",
+		"coined": true,
+		"firstAppeared": "27th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Piak'lum.",
+		"english": "Abomination.",
+		"alts": ["Piaculum.", "Pia'klum."],
+		"register": "liturgical",
+		"vibe": "Dread & dark omens",
+		"usage": "a sin so grave it demands atonement",
+		"notes": "From 'piaculum' (an offence requiring expiation), c hardened to k. Carries an obligation with it — naming something piak'lum means someone has to answer for it.",
+		"coined": true,
+		"firstAppeared": null
+	},
+	{
+		"diabolic": "Tab'es.",
+		"english": "Rot. Wasting-sickness.",
+		"alts": ["Tabes.", "Tab'."],
+		"register": "guttural",
+		"vibe": "Dread & dark omens",
+		"usage": "decay, putrefaction, a slow sickness",
+		"notes": "From 'tabes' (wasting, putrefaction). Used for things that are rotting from within — flesh, relics, people.",
+		"coined": true,
+		"firstAppeared": null
 	}
 ]
