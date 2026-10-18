@@ -856,5 +856,60 @@
 		"notes": "From 'tabes' (wasting, putrefaction). Used for things that are rotting from within — flesh, relics, people.",
 		"coined": true,
 		"firstAppeared": "27th of Kuthona, 4725 AR"
+	},
+	{
+		"diabolic": "Parv'animi.",
+		"english": "Petty. Small-minded.",
+		"alts": ["Parvanimi.", "Parv'an."],
+		"register": "street",
+		"vibe": "Trash talk & mid-fight",
+		"usage": "people being petty or dismissive toward someone who doesn't deserve it",
+		"notes": "From 'parvus animus' — small spirit. Swallowed middle syllable; contemptuous but not heated — a judgement about character rather than a shout.",
+		"coined": true,
+		"firstAppeared": "4th of Abadius, 4726 AR"
+	},
+	{
+		"diabolic": "Rat'io.",
+		"english": "Sense. Reason.",
+		"alts": ["Ratio.", "Rat'."],
+		"register": "street",
+		"vibe": "Casual filler",
+		"usage": "'he doesn't make any Rat'io' — someone's logic falling apart",
+		"notes": "Plain 'ratio' with the vowel cluster snapped by an apostrophe. Usually negated — Caelia only reaches for the word when sense is absent.",
+		"coined": true,
+		"firstAppeared": "4th of Abadius, 4726 AR"
+	},
+	{
+		"diabolic": "Irat'a.",
+		"english": "Angry. Pissed off.",
+		"alts": ["Iratta.", "Ir'ta."],
+		"register": "guttural",
+		"vibe": "Expletives & frustration",
+		"usage": "'I got pretty Irat'a' — describing her own temper after the fact",
+		"notes": "Feminine 'irata' with a hardened, clipped ending. Self-descriptive rather than directed; she says it like it's the other person's fault she got there.",
+		"coined": true,
+		"firstAppeared": "4th of Abadius, 4726 AR"
+	},
+	{
+		"diabolic": "Non'idem est!",
+		"english": "It's NOT the same!",
+		"alts": ["Non idem est!", "Nonidem!"],
+		"register": "guttural",
+		"vibe": "Expletives & frustration",
+		"usage": "rejecting a false equivalence, shouted",
+		"notes": "'Non idem est' run together under emotion — the negation and the 'same' collapse into one word, the verb trails after. Liturgical bones, guttural delivery.",
+		"coined": true,
+		"firstAppeared": "4th of Abadius, 4726 AR"
+	},
+	{
+		"diabolic": "Vel'ox.",
+		"english": "Fast. Quick.",
+		"alts": ["Velox.", "Vel'."],
+		"register": "street",
+		"vibe": "Ally praise",
+		"usage": "grudging respect for someone quicker than her, sparring partner or enemy",
+		"notes": "'Velox' with the vowel swallowed. Praise with an edge of irritation — said about whoever just beat her.",
+		"coined": true,
+		"firstAppeared": "4th of Abadius, 4726 AR"
 	}
 ]
