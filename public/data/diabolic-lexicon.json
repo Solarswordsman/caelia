@@ -911,5 +911,38 @@
 		"notes": "'Velox' with the vowel swallowed. Praise with an edge of irritation — said about whoever just beat her.",
 		"coined": true,
 		"firstAppeared": "4th of Abadius, 4726 AR"
+	},
+	{
+		"diabolic": "Merk'edem.",
+		"english": "Repay. Reward.",
+		"alts": ["Merk'dem.", "Mer'ces."],
+		"register": "liturgical",
+		"vibe": "Casual filler",
+		"usage": "a reward or payment owed for a service — a debt settled, in the nuns' sense",
+		"notes": "From 'merces' (wages, reward). Nun-taught framing: a favour isn't a gift, it's a balance to be paid. Coined when Nocticula said she wanted to repay the party for helping Sevizoy.",
+		"coined": true,
+		"firstAppeared": "6th of Abadius, 4726 AR"
+	},
+	{
+		"diabolic": "Mut'ari.",
+		"english": "To change. To become.",
+		"alts": ["Mutar'i.", "Mut'ar."],
+		"register": "liturgical",
+		"vibe": "Awe & fearful wonder",
+		"usage": "changing something inside yourself — evolving, not just fixing",
+		"notes": "From 'mutari' (to be changed). The passive form survives from the liturgy: change is something done to you. Coined after Nocticula's shadow-reflections showed each of the party what they wanted to change in themselves.",
+		"coined": true,
+		"firstAppeared": "6th of Abadius, 4726 AR"
+	},
+	{
+		"diabolic": "Exspek'tans.",
+		"english": "Anticipating. Waiting for.",
+		"alts": ["Spek'tans.", "Ex'pektans."],
+		"register": "street",
+		"vibe": "Dread & dark omens",
+		"usage": "something long awaited, with an edge of dread about how it'll go",
+		"notes": "From 'exspectans' (awaiting), c hardened to k and the middle swallowed. Coined the night before the Gala.",
+		"coined": true,
+		"firstAppeared": "6th of Abadius, 4726 AR"
 	}
 ]
